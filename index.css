@@ -250,7 +250,7 @@ main{
 }
 #contact-section{
     background-color: rgb(232, 243, 247);
-    padding: 35px;
+    padding: 50px;
     width:100%;
     min-height:auto;
 }
@@ -562,7 +562,7 @@ footer{
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 15px;              /* Space between image and text */
+        gap: 15px;             
         padding-top: 90px;
         min-height: auto;
     }
@@ -576,8 +576,8 @@ footer{
     .home-right{
         width: 80%;
         height: auto;
-        min-height: auto;       /* Override 70vh */
-        flex: none;             /* Remove flex:1 */
+        min-height: auto;      
+        flex: none;             
         padding: 10px 20px;
         margin: 0;
         justify-content: center;
