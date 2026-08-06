@@ -6,6 +6,7 @@
 /* * ::-webkit-scrollbar{
     display: none;
 } */
+
 body{
     box-sizing: border-box;
     text-align:center ;
@@ -31,6 +32,8 @@ body{
     width:100%;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     padding:0 clamp(15px,4vw,40px);
+    /* for animation  */
+    z-index: 1000;      
 }
 .navlists ul{
     display: flex;
@@ -295,7 +298,6 @@ footer{
     text-align: center;
     font-size: clamp(14px, 1.4vw, 18px);
 }
-
 @media (max-width:1400px) {
 
     .profilePicture{
