@@ -250,7 +250,7 @@ main{
 }
 #contact-section{
     background-color: rgb(232, 243, 247);
-    padding: 50px;
+    padding: 35px;
     width:100%;
     min-height:auto;
 }
@@ -618,6 +618,7 @@ footer{
     }
     #contact-section{
         min-height: auto;
+        padding-bottom:100px;
     }
     #contact-details{
         display: flex;
@@ -625,10 +626,12 @@ footer{
         align-items: center;
         flex-wrap: wrap;
         padding: auto;
-        gap: 20px;
         margin: 0;
     }
+    .contact-cards{
+        padding: 10px 10px;
+    }
     footer{
-        height: 42vh;
+        height: 35vh;
     }
 }
