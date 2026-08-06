@@ -278,7 +278,7 @@ main{
     margin-top: 0;
 }
 .message-button{
-    margin:20px;
+    margin:clamp(10px, 2vw, 20px);
     padding: clamp(10px, 1.2vw, 15px) clamp(20px, 2.5vw, 30px);
     border-radius: clamp(18px, 2vw, 30px);
     background-color: rgb(0, 85, 255);
@@ -346,7 +346,7 @@ footer{
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px ) {
 
     #home{
         flex-direction: column-reverse;
@@ -397,14 +397,18 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-
+    .about-me-left p{
+        font-size: 15px;
+        margin: 20px auto;
+    
     #contact-details{
         flex-wrap: wrap;
         gap: 20px;
     }
 }
+}
 
-@media (max-width :850px) {
+@media (max-width :850px)  {
     html,body{
         width: 100%;
         height: 100%;
@@ -468,6 +472,7 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+     
 }
 
 @media (max-width :600px) {
@@ -544,7 +549,86 @@ footer{
     }
     #contact-section{
         min-height: 100vh;
+        padding:20px;
+        margin:20px auto;
+    }
+    footer{
+        height: 15vh;
+    }
+}
+@media (min-height: 900px) and (min-width: 750px) {
+    #home{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;              /* Space between image and text */
+        padding-top: 90px;
+        min-height: auto;
+    }
+    #home-section,
+    #about-me-section,
+    #projects-section,
+    #contact-section{
         min-height:auto;
-        padding:40px 20px;
+    }
+    .home-left,
+    .home-right{
+        width: 80%;
+        height: auto;
+        min-height: auto;       /* Override 70vh */
+        flex: none;             /* Remove flex:1 */
+        padding: 10px 20px;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .name,
+    .skill,
+    .aboutMeShort{
+        text-align: center;
+    }
+    .profilePicture{
+        width: 380px;
+        max-height: 380px;
+        margin: 0;
+
+    }
+    #homeButton{
+        justify-content: center;
+    }
+    #about-me-section{
+        max-height: auto;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-left,
+    .about-me-right{
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        margin: 20px auto;
+        gap: 10px;
+    }
+    #contact-section{
+        min-height: auto;
+    }
+    #contact-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: auto;
+        gap: 20px;
+        margin: 0;
+    }
+    footer{
+        height: 42vh;
     }
 }
