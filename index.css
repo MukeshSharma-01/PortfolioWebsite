@@ -385,7 +385,6 @@ footer{
     }
 
     .about-me{
-        flex-direction: column;
         align-items: center;
     }
 
@@ -477,31 +476,69 @@ footer{
 
 @media (max-width :600px) {
     #navbar{
-        padding: 0 10px;
+        padding: 0 ;
     }
     .navlists{
         display: none;
+        position: absolute;
+        top: 85px;
+        max-width: auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .navlists ul{
+        border:black 1px solid;
+        background-color:rgb(232, 243, 247) ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap:0%;
+        padding: 0%;
+    }
+    .navlists ul li{
+        width: 100%;
+        border:#000 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px auto;
+    }
+    .navlists ul li a{
+        align-self: center;
+        padding: 20px 42vw;
+        color: black;
+        display: block;
+    }
+    .navlists.active{
+        display: block;
+        width: 100%;
+        margin-right: 0;
     }
     .nav3{
         display: block;
         padding:0px 10px;
         font-size: 23px;
+        cursor: pointer;
     }
      #home-section{
         width: 100%;
+        min-height: auto;
     }
     #home{
         flex-direction:column-reverse ;
     }
     .home-left, .home-right{
         width: 100%;
-        padding:0 10px;
+        padding:10px 10px;
         justify-content: center;
         min-height: auto;
     }
     .profilePicture{
-        width:200px;
-        max-height: 200px;
+        width:220px;
+        max-height: 220px;
         object-fit: cover;
         border-radius: 50%;
     }
@@ -551,9 +588,7 @@ footer{
         min-height: 100vh;
         padding:20px;
         margin:20px auto;
-    }
-    footer{
-        height: 15vh;
+        padding-top: 80px;
     }
 }
 @media (min-height: 900px) and (min-width: 750px) {
